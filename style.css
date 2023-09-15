@@ -10,6 +10,7 @@ body{
 }
 .galax{
     background: url(./img/galaxia.avif);
+    background-size: contain;
     height: 100%;
     width: 100%;
     display: grid;
@@ -63,18 +64,46 @@ body{
         transform: rotate(360deg);
     }
 }
+@media (max-width: 800px){
+    .borde-sol{
+        padding: 200px; 
+    }
+    .borde-terra{
+        top: 0px;
+        left: 0px;
+    }
+}
+@media (max-width: 620px){
+    .borde-sol{
+        padding: 140px; 
+    }
+    .borde-terra{
+        top: -20px;
+        left: 0px;
+        padding: 40px;
+    }
+    .terra{
+        height: 40px;
+        width: 40px;
+    }
+    .lua{
+        height: 20px;
+        width: 20px;
+    }
+    .sol{
+        height: 60px;
+        width: 60px;
+        background-size: cover;
+    }
+}
 @media (max-width: 400px){
     .borde-sol{
         padding: 100px;
         border-radius: 50%;    
     }
     .borde-terra{
-        top: 0px;
-        left: -50px;
+        top: -25px;
+        left: -20px;
         padding: 40px;
-    }
-    .lua{
-        height: 25px;
-        width: 25px;
     }
 }
