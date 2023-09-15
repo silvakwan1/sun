@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    overflow: hidden;
+    height: 100vh;
+}
+.galax{
+    background: url(./img/galaxia.avif);
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.sol{
+    background: url(./img/sun.svg);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.borde-sol{
+    animation: spin 20s infinite linear;
+    position: relative;
+    padding: 250px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    border-top-color: rgba(255, 255, 255, 0.231);    
+}
+.terra{
+    background: url(./img/Earth.svg) blue;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(251, 251, 255, 0.5);
+}
+.borde-terra{
+    border: 2px solid transparent;
+    border-top-color: rgba(255, 255, 255, 0.231); 
+    position: absolute;
+    top: 20px;
+    left: -5px;
+    padding: 50px;
+    border-radius: 50%;
+     animation: spin 5s infinite linear reverse; 
+}
+.lua{
+    background: linear-gradient(gray, rgb(72, 70, 70),gray);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+@keyframes spin {
+    to{
+        transform: rotate(2deg);
+    }
+    from{
+        transform: rotate(360deg);
+    }
+}
+@media (max-width: 400px){
+    .borde-sol{
+        padding: 100px;
+        border-radius: 50%;    
+    }
+    .borde-terra{
+        top: 0px;
+        left: -50px;
+        padding: 40px;
+    }
+    .lua{
+        height: 25px;
+        width: 25px;
+    }
+}
