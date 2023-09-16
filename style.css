@@ -2,15 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
 }
 body{
-    background-color: black;
-    overflow: hidden;
+    background: url(./img/galaxia.avif);
+    background-size: contain;
+    overflow-x: hidden;
     height: 100vh;
 }
 .galax{
-    background: url(./img/galaxia.avif);
-    background-size: contain;
+   
     height: 100%;
     width: 100%;
     display: grid;
@@ -45,16 +46,43 @@ body{
     left: -5px;
     padding: 50px;
     border-radius: 50%;
-     animation: spin 5s infinite linear reverse; 
+    animation: spin 5s infinite linear reverse; 
 }
 .lua{
     background: linear-gradient(gray, rgb(72, 70, 70),gray);
+    box-shadow: 0 0 10px rgba(251, 251, 255, 0.5);
     height: 30px;
     width: 30px;
     border-radius: 50%;
     position: absolute;
     top: 15px;
     right: 0;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+}
+.validador{
+    white-space: nowrap;
+}
+.validador .input{
+    width: calc(60% + 20px);
+    border-radius: 40px;
+    background: transparent;
+    padding: 5px 16px;
+    margin-right: 20px;
+}
+#verificar{
+    color: black;
+    padding: 5px 16px;
+    border-radius: 40px;
+    
+}
+.erro{
+    color: red;
 }
 @keyframes spin {
     to{
@@ -69,7 +97,7 @@ body{
         padding: 200px; 
     }
     .borde-terra{
-        top: 0px;
+        top: -20px;
         left: 0px;
     }
 }
@@ -106,4 +134,12 @@ body{
         left: -20px;
         padding: 40px;
     }
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(73, 18, 73);
+    border-radius: 20px;
 }
