@@ -132,7 +132,9 @@ function mensagens() {
       break;
     case undefined:
       mensagem1 = "você não estar autorisado(a)";
+      break;
   }
+
   return {
     msn1: mensagem1,
     msn2: mensagem2,
@@ -143,7 +145,7 @@ function mensagens() {
 }
 
 let intervalId;
-audio = document.querySelector("#audio");
+
 function toggleMusic() {
   const numero = numeroRandom();
   console.log(numero);
@@ -196,7 +198,7 @@ function nameAndcantor() {
     "05": "Poesia Acústica 13",
     "06": "Poesia Acústica 14",
     "07": "Poesia Acústica 9",
-    "08": "O PODER DESSA GAROTA - mc gabzin",
+    "08": "O poder dessa garota - mc gabzin",
     "09": "Erro que dá certo - thiago aquino",
     10: "Mande um sinal - silvanno salles",
     11: "Mudando de assunto - henrique e juliano",
