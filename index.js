@@ -167,7 +167,7 @@ intervalId = setInterval(toggleMusic, 5000);
 
 function numeroRandom() {
   const random = Math.random();
-  const numero = Math.floor(random * 23);
+  const numero = Math.floor(random * 25);
 
   const newNumero = numero <= 9 ? "0" + numero : numero;
 
@@ -211,6 +211,7 @@ function nameAndcantor() {
     20: "Louca de saudade - jorge e mateus",
     21: "sal e pimenta - kayblack",
     22: "Minha cura - mc cabelinho",
+    23: "Apê 1001 - bin",
+    24: "Gostava Tanto De Você - Tim Maia",
   };
 }
-//Tim Maia - Gostava Tanto De Você BIN - Apê 1001
