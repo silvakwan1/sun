@@ -295,17 +295,29 @@ span {
   }
 }
 @media (max-width: 800px) {
-  .borde-sol {
-    padding: 200px;
-  }
-  .borde-terra {
-    top: -20px;
-    left: 0px;
-  }
   .card-text {
-    line-height: 1.5rem;
-    gap: 20px;
-    font-size: 1.5rem;
+    line-height: normal;
+    gap: 10px;
+  }
+  .card-text #audio {
+    height: 5px;
+  }
+  .card-text .text-p {
+    font-size: 1rem;
+  }
+  .card-text .card-title {
+    font-size: 1.4rem;
+  }
+  .card-text .cantor {
+    align-self: flex-end;
+    font-size: 0.8rem;
+  }
+  .card-text .cantor.p {
+    white-space: nowrap;
+  }
+  .modal {
+    top: 5vh;
+    height: 90vh;
   }
 }
 
@@ -313,22 +325,11 @@ span {
   .card {
     padding: 15%;
   }
-  .card-text {
-    line-height: 1.5rem;
-    gap: 20px;
-    font-size: 1.3rem;
-  }
 }
 
 @media (max-width: 400px) {
   .card {
-    padding: 12%;
-  }
-
-  .card-text {
-    line-height: 1.5rem;
-    gap: 15px;
-    font-size: 1.3rem;
+    padding: 10%;
   }
 }
 
