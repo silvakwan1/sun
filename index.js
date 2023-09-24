@@ -116,7 +116,7 @@ function mensagens() {
   switch (nome) {
     case "marques":
       mensagem1 =
-        "Olá, estava aqui pensando por que não te colocar para pensar um pouco?";
+        "Estava aqui pensando por que não te colocar para pensar um pouco?";
       mensagem2 = "Então pensei em uma charada.";
       mensagem3 =
         "Sou um gigante amarelo, quente e brilho no céu durante o dia, mas desapareço ao noite.";
