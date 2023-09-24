@@ -300,10 +300,10 @@ span {
     gap: 10px;
   }
   .card-text .text-p {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
   .card-text .card-title {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
   .card-text .cantor {
     align-self: flex-end;
@@ -313,14 +313,24 @@ span {
     white-space: nowrap;
   }
   .modal {
-    top: 5vh;
-    height: 90vh;
+    top: 10vh;
+    height: 80vh;
   }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 700px) {
   .card {
     padding: 15%;
+  }
+  .card-text .text-p {
+    font-size: 1rem;
+  }
+  .card-text .card-title {
+    font-size: 1.4rem;
+  }
+  .card-text .cantor {
+    align-self: flex-end;
+    font-size: 0.8rem;
   }
 }
 
